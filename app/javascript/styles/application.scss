@@ -1,0 +1,223 @@
+// @import "~bootstrap/scss/bootstrap.scss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+html {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+}
+.body-regular {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #262a3e;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: flex;
+}
+.body-regular {
+  margin-top: 32px;
+}
+.tw-mr-8 {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+h1,
+p {
+  color: #262a3e;
+}
+b, strong {
+  font-weight: 500;
+}
+h1,
+.h1 {
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: palette(grey, 700);
+  font-size: 56px;
+  line-height: 64px;
+}
+.hero-section.mt-image .h-container,
+.hero-section.mt-video .h-container {
+  margin-top: 32px;
+}
+@media (min-width: 1024px) {
+  .h-container-md-sup-only {
+    max-width: 1240px;
+    margin: auto;
+  }
+}
+.h-container {
+  max-width: 1240px;
+  margin: auto;
+  width: 100%;
+  padding: 0px 20px;
+  .content-center {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-box-flex: 0; */
+    -ms-flex: 0 1 auto;
+    /* flex: 0 1 auto; */
+    /* -webkit-box-orient: horizontal; */
+    /* -webkit-box-direction: normal; */
+    -ms-flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* width: auto; */
+    margin-right: -12px;
+    .show-flex {
+      flex-basis: 50%;
+      max-width: 50%;
+      box-sizing: border-box;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+.page-bg-container-gradient > section {
+  position: relative;
+  z-index: 3;
+  background: transparent !important;
+}
+#section-0 {
+  padding-top: 88px;
+}
+.hero-section {
+  margin: 0;
+}
+body {
+  background-color: #f2f6fd;
+}
+.hero-section .subtitle ul {
+  list-style: none;
+}
+.btns-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.hero-section .subtitle li {
+  display: flex;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section .container-img {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+a,
+.link-like {
+  color: #6b5aed;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btns-container {
+  flex-flow: row;
+}
+
+.btns-container.btn-nowrap .btn-primary {
+  margin-right: 24px;
+}
+
+.btns-container.btn-nowrap .btn {
+  white-space: nowrap;
+  width: auto;
+  flex: 1 1 0;
+  display: block;
+  max-width: 320px;
+}
+
+.btn-primary {
+  width: 320px;
+  width: unset;
+  max-width: 320px;
+  display: inline-block;
+  border-radius: 4px;
+  border-style: none;
+  transition: all 0.3s ease;
+  background-color: #6b5aed;
+  padding: 12px 28px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-secondary {
+  width: unset;
+  max-width: 320px;
+  display: inline-block;
+  border-radius: 4px;
+  border-style: none;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  padding: 12px 28px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #6b5aed;
+  background: transparent;
+  padding: 11px 27px;
+  color: #6b5aed;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+@media (max-width: 767px) {
+  .h-container .content-center {
+    flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    .show-flex {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  .btns-container.btn-nowrap .btn {
+    max-width: inherit;
+    display: block;
+    width: 100%;
+  }
+  .btns-container.btn-nowrap .btn-primary {
+    margin-right: 0px;
+  }
+  .btns-container > .btn + .btn {
+    margin-top: 16px;
+  }
+  .btns-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+}
+@media (max-width: 850px) {
+  .hero-section .btns-container {
+    justify-content: center;
+  }
+}
+
+@import "tailwindcss/utilities";

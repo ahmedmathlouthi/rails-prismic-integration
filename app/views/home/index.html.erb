@@ -1,0 +1,41 @@
+<canvas class="page-bg-carrier" width="32" height="32"></canvas>
+<section class="hero-section mt-image image transparent-mode section--spc--nav--top section--spc--none--bottom prismic" id="section-0">
+  <div class="h-container">
+    <div class="lg:row-12 lg:row-gap md:row-8 md:row-gap x-md:row-8 x-md:row-gap sm:row-4 sm:row-gap x-md:row-center content-center">
+      <div class="col-md-6 lg:col lg:col-span-6 md:col md:col-span-4 sm:col-span-4 x-md:col-span-8 flex-content-center flex-direction-column show-flex content-container">
+        <h1>
+          <%= @document["homepage.first_title"].as_text() %>
+        </h1>
+        <div class="x-md:row-8">
+          <div class="body-regular subtitle x-md:col-offset-1 x-md:col-span-6">
+            <p></p>
+            <div class="checkmark">
+              <ul>
+                <%= @subtitle_lines.each do |line| %>
+                  <li class="tw-mb-8">
+                    <span class="icon tw-mr-8 inline-block"><i class="fa fa-check"></i></span>
+                    <p><%= line %></p>
+                  </li>
+                <%  end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 btns-container btn-nowrap">
+          <a class="btn-primary btn mt-16" data-track="website_cta_pricing_clicked" data-location="hero_primary_btn" href="#"><%=@document["homepage.compare_plans_btn"].as_text()%></a>
+          <a class="btn-secondary btn mt-16" href="#"><%=@document["homepage.qonto_solution_btn"].as_text()%></a>
+        </div>
+        <p class="body-xsmall mt-16">
+          <%= @document["homepage.no_commitment"].as_text() %>
+        </p>
+      </div>
+      <div class="lg:col sm:col-span-4 lg:col-span-6 md:col md:col-span-4 x-md:col-span-8 flex-content-center flex-direction-column show-flex">
+        <div class="placeholder-absolute-img">
+          <div class="container-img ">
+            <img src="<%= @document['homepage.card_image'].url %>" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
