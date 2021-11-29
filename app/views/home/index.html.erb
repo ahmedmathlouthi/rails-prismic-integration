@@ -10,13 +10,20 @@
           <div class="body-regular subtitle x-md:col-offset-1 x-md:col-span-6">
             <p></p>
             <div class="checkmark">
+          
               <ul>
-                <%= @subtitle_lines.each do |line| %>
                   <li class="tw-mb-8">
                     <span class="icon tw-mr-8 inline-block"><i class="fa fa-check"></i></span>
-                    <p><%= line %></p>
+                    <p><%= @document["homepage.first_line"].as_text() %></p>
                   </li>
-                <%  end %>
+                  <li class="tw-mb-8">
+                    <span class="icon tw-mr-8 inline-block"><i class="fa fa-check"></i></span>
+                    <p><%= @document["homepage.second_line"].as_text() %></p>
+                  </li>
+                  <li class="tw-mb-8">
+                    <span class="icon tw-mr-8 inline-block"><i class="fa fa-check"></i></span>
+                    <p><%= @document["homepage.third_line"].as_text() %></p>
+                  </li>
               </ul>
             </div>
           </div>
